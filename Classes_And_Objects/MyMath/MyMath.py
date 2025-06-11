@@ -10,8 +10,11 @@ class MyMath:
         return total
 
     def Sup(self):
-        total = 0
-        for iv in self.my_details:
+        if not self.my_details:
+            return 0
+
+        total = self.my_details[0]
+        for iv in self.my_details[1:]:
             total -= iv
         return total
 
@@ -55,4 +58,4 @@ class MyMath:
 
 if __name__ == '__main__':
     i = MyMath(2, 3)
-    print(i.Modules())
+    print(i.Sup())

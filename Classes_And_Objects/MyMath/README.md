@@ -48,7 +48,7 @@ A practice project to learn OOP concepts in Python By Bharavi Sadineni
     print(f"output: {i.Sup()}")
 
   #### Output:
-      output: -5
+      output: -1
 
   ### Example-3:
   Performing multiplication operation for "n" number of values by using
