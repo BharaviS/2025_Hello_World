@@ -1,1 +1,1 @@
-# MyMath Project
+# MyMath Python Project
