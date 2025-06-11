@@ -54,5 +54,5 @@ class MyMath:
 
 
 if __name__ == '__main__':
-    i = MyMath(5)
-    print(i.factoriel())
+    i = MyMath(2, 3)
+    print(i.Modules())
