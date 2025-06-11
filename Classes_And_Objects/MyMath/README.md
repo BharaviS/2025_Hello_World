@@ -102,3 +102,5 @@ A practice project to learn OOP concepts in Python By Bharavi Sadineni
   - Control structures like loops and conditionals
   - Simple validation and error handling
   - Designing reusable components
+
+![Logo](./logo-removebg.png)
