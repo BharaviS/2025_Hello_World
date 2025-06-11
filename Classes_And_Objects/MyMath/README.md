@@ -6,7 +6,7 @@ A practice project to learn OOP concepts in Python By Bharavi Sadineni
 
 - MyMath is a simple Python class project built to practice Object-Oriented Programming concepts.
 - Demonstrates use of classes, objects, and methods
-- Uses *args to handle variable number of inputs
+- Use *args to handle variable number of inputs
 - Implements basic arithmetic and factorial logic
 - Includes input validation and result formatting
 
@@ -32,19 +32,73 @@ A practice project to learn OOP concepts in Python By Bharavi Sadineni
 
 ## Examples:
   ### Example-1:
-  Performing Addition operation for "n" number of values
-
+  Performing Addition operation for "n" number of values by using
+  #### Add()
     i = MyMath(2, 3)
-    print(i.Add())
+    print(f"output: {i.Add()}")
 
   #### Output:
-      5
+      output: 5
 
   ### Example-2:
-  Performing Addition operation for "n" number of values
+  Performing Subtraction operation for "n" number of values by using
+  #### Sup()
 
     i = MyMath(2, 3)
-    print(i.Sup())
+    print(f"output: {i.Sup()}")
 
   #### Output:
-      5
+      output: -5
+
+  ### Example-3:
+  Performing multiplication operation for "n" number of values by using
+  #### Mul()
+    i = MyMath(2, 3)
+    print(f"output: {i.Mul()}")
+
+  #### Output:
+      output: 6
+
+  ### Example-4:
+  Performing division operation for "n" number of values by using
+  #### Dev()
+
+    i = MyMath(2, 3)
+    print(f"output: {i.Dev()}")
+
+  #### Output:
+      output: 0.667
+
+  ### Example-4:
+  Performing to get reminder "n" number of values by using
+  #### Modules()
+
+    i = MyMath(2, 3)
+    print(f"output: {i.Modules()}")
+
+  #### Output:
+      output: 2
+
+  ### Example-4:
+  Performing division operation for single values by using
+  #### factoriel()
+
+    i = MyMath(5)
+    print(f"output:\n{i.factoriel()}")
+
+  #### Output:
+      output:
+      1! = 1
+      2! = 2
+      3! = 6
+      4! = 24
+      5! = 120
+      120
+
+## What I Learned
+  - Key concepts practiced through MyMath project:
+  - Using *args to accept flexible input
+  - Basic OOP structure: class, __init__, methods
+  - Control structures like loops and conditionals
+  - Simple validation and error handling
+  - Designing reusable components
