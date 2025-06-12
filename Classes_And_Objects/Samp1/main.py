@@ -25,8 +25,6 @@ class Marks:
         else:
             return "F"
 
-
-
 class StudentsData:
     def __init__(self, students: int) -> None:
         self.students = students

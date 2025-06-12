@@ -1,13 +1,10 @@
 # MyMath Python Project
 
 A practice project to learn OOP concepts in Python By Bharavi Sadineni
-___
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Project-Complete-brightgreen)
-
-___
 
 ## Project Overview
 
