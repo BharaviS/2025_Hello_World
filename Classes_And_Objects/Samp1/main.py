@@ -1,16 +1,16 @@
 class Marks:
-    def __init__(self, name: str, **detales: float) -> None:
+    def __init__(self, name: str, **details: float) -> None:
         self.name = name
-        self.marks = detales
+        self.__marks = details
 
     def get_marks(self) -> float:
         total: float = 0.00
-        for subjects, marks in self.marks.items():
+        for subjects, marks in self.__marks.items():
             total = total + marks
-        return round((total/len(self.marks)), 2)
+        return round((total/len(self.__marks)), 2)
 
     def get_subjects_marks(self) -> list[str]:
-            return [f"{subjects}: {marks}"for subjects, marks in self.marks.items()]
+            return [f"{subjects}: {marks}" for subjects, marks in self.__marks.items()]
 
     def get_grade(self) -> str:
         avg = self.get_marks()
@@ -27,11 +27,11 @@ class Marks:
 
 class StudentsData:
     def __init__(self, students: int) -> None:
-        self.students = students
-        self.mystudents = []
+        self.__students = students
+        self.__mystudents = []
 
     def get_names(self) -> None:
-        for i in range(1, self.students + 1):
+        for i in range(1, self.__students + 1):
             name = input(f"\nEnter name for student {i}: ")
             subject = ["Maths", "Science"]
 
@@ -41,10 +41,10 @@ class StudentsData:
                 subject_marks[sub] = mark
 
             student = Marks(name, **subject_marks)
-            self.mystudents.append(student)
+            self.__mystudents.append(student)
 
     def get_total_marks(self) -> None:
-        for student in self.mystudents:
+        for student in self.__mystudents:
             print(f"\nStudent name: {student.name}")
             for line in student.get_subjects_marks():
                 print(line)
@@ -52,7 +52,7 @@ class StudentsData:
             print(f"Grade: {student.get_grade()}")
 
 if __name__ == '__main__':
-    v = StudentsData(2)
+    v = StudentsData(1)
     v.get_names()
     v.get_total_marks()
 
