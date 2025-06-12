@@ -32,7 +32,7 @@ class StudentsData:
         self.students = students
         self.mystudents = []
 
-    def get_names(self):
+    def get_names(self) -> None:
         for i in range(1, self.students + 1):
             name = input(f"\nEnter name for student {i}: ")
             subject = ["Maths", "Science"]
@@ -45,7 +45,7 @@ class StudentsData:
             student = Marks(name, **subject_marks)
             self.mystudents.append(student)
 
-    def get_total_marks(self):
+    def get_total_marks(self) -> None:
         for student in self.mystudents:
             print(f"\nStudent name: {student.name}")
             for line in student.get_subjects_marks():
