@@ -1,0 +1,11 @@
+# requirements.txt for Student Marks Management System
+# This project uses standard Python libraries only.
+# No external dependencies required for core functionality.
+
+# If you plan to use file handling with JSON or CSV in future:
+# json - built-in module
+# csv - built-in module
+
+# Optional: If you later add data visualization or GUI features
+# matplotlib==3.8.0
+# pandas==2.2.1
