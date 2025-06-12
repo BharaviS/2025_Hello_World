@@ -1,7 +1,6 @@
 # 📘 Student Marks Management System
 
 ![Python](https://img.shields.io/badge/Python-3.7%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Project-Complete-brightgreen)
 
 A simple and effective Python project that helps manage student academic data using **Object-Oriented Programming**. This system calculates individual subject scores, average marks, and grades for multiple students through a command-line interface.
