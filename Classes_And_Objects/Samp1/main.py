@@ -1,10 +1,13 @@
 class Marks:
     def __init__(self, name: str, **details: float) -> None:
-        self.name = name
+        self.__name = name
         self.__marks = details
 
+    def get_name(self) -> str:
+        return self.__name
+
     def get_marks(self) -> float:
-        total: float = 0.00
+        total: float = 0.0
         for subjects, marks in self.__marks.items():
             total = total + marks
         return round((total/len(self.__marks)), 2)
@@ -37,15 +40,21 @@ class StudentsData:
 
             subject_marks = {}
             for sub in subject:
-                mark = float(input(f"Enter marks for {sub}: "))
-                subject_marks[sub] = mark
+                while True:
+                    try:
+                        mark = float(input(f"Enter marks for {sub}: "))
+                        subject_marks[sub] = mark
+                        break
+                    except ValueError:
+                        print("Please enter a valid number.")
+
 
             student = Marks(name, **subject_marks)
             self.__mystudents.append(student)
 
     def get_total_marks(self) -> None:
         for student in self.__mystudents:
-            print(f"\nStudent name: {student.name}")
+            print(f"\nStudent name: {student.get_name()}")
             for line in student.get_subjects_marks():
                 print(line)
             print(f"Average Marks: {student.get_marks()}")
