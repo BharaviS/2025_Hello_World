@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Classes_And_Objects/.idea/Classes_And_Objects.iml" filepath="$PROJECT_DIR$/../Classes_And_Objects/.idea/Classes_And_Objects.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Hello_World.iml" filepath="$PROJECT_DIR$/.idea/Hello_World.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../StringSlicing/.idea/StringSlicing.iml" filepath="$PROJECT_DIR$/../StringSlicing/.idea/StringSlicing.iml" />
     </modules>
   </component>
 </project>
