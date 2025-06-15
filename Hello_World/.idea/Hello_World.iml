@@ -8,5 +8,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Classes_And_Objects" />
     <orderEntry type="module" module-name="StringSlicing" />
+    <orderEntry type="module" module-name="ExceptionHandling" />
   </component>
 </module>
