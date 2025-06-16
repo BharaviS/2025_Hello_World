@@ -2,4 +2,4 @@ try:
     x = int("abc")
     print(x)
 except ValueError:
-    print("Value must be in intiger")
+    print("Value must be an integer")
