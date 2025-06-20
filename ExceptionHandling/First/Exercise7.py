@@ -7,8 +7,6 @@ def validate_user(name, age):
     elif name.isnumeric():
        raise InputValidationError("Name must contain letter.")
 
-
-
     if age < 0 or age > 130:
         raise InputValidationError("Invalid age range.")
 
