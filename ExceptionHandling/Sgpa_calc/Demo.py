@@ -12,9 +12,7 @@ class Demo:
         try:
             return grade_map[self.__res]
         except KeyError:  # letter not in the map
-            raise InvalidGradeError(
-                "Grade must be one of O, S, A, B, C, D, F."
-            )
+            raise InvalidGradeError("Grade must be one of O, S, A, B, C, D, F.")
 
 class Syear:
     def __init__(self):
