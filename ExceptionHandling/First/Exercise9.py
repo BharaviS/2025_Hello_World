@@ -6,7 +6,7 @@ class WeakPasswordError(Exception):
 
 #for specific mail validation
 def validate_email_id(email: str) -> str:
-    email = email.strip().strip()
+    email = email.strip().lower()
     allow_domain = "mymail.com"
 
     if not email:
