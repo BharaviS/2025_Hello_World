@@ -56,38 +56,24 @@ def validate_phone(number: str, length: int = 10) -> str:
     if not number:
         raise PhoneNumberError("Please enter your mobile number.")
 
-    if number.startswith("+"):
-        parts = number.split()
+    cleaned = number.replace(" ", "").replace("-", "")
+    country = ""
 
-        if len(parts) != 2:
-            raise PhoneNumberError("Format should be: +<code> <10-degit-number>.")
+    if cleaned.startswith("+"):
+        if " " in number:
+            country, cleaned = number.split(None, 1)
+            cleaned = cleaned.replace(" ", "").replace("-", "")
+        else:
+            country = cleaned[:3]
+            cleaned = cleaned[3:]
 
-        country_code, mobile = parts
+    if not cleaned.isdigit():
+        raise PhoneNumberError("Mobile number must contains only digits.")
 
-        if not mobile.isdigit():
-            raise PhoneNumberError("Mobile number must contains only digits.")
+    if len(cleaned) != length:
+        raise PhoneNumberError("Mobile number must contains exactly 10 digits.")
 
-        if len(mobile) != length:
-            raise PhoneNumberError("Mobile number must contains exactly 10 digits.")
-
-        special: str = "`~!@#$%^&*()><,.?/:;|{}[]=-_+"
-        if any(char in special for char in mobile):
-            raise PhoneNumberError(f"Your mobile number does not contain special characters.")
-
-        return f"{country_code} {mobile}"
-    else:
-        if not number.isdigit():
-            raise PhoneNumberError("Mobile number must contains only digits.")
-
-        if len(number) != length:
-            raise PhoneNumberError("Mobile number must contains exactly 10 digits.")
-
-
-    special: str = "`~!@#$%^&*()><,.?/:;|{}[]=-_+"
-    if any(char in special for char in number):
-        raise PhoneNumberError(f"Your mobile number does not contain special characters.")
-
-    return number
+    return (country + " " if country else "") + cleaned
 
 #Password validation
 def validate_password(password: str, min_len: int = 8) -> str:
