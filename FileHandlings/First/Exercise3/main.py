@@ -1,4 +1,5 @@
 import json
+
 try:
     Filename = "JSON\\profile.json"
     user_profile = {
@@ -84,8 +85,8 @@ def delete_json():
 if __name__ == "__main__":
     try:
         #write_json()
-        update_json()
-        #delete_json()
+        #update_json()
+        delete_json()
         read_json()
     except Exception as er:
         print(f"Unexpected Error: {er}")
