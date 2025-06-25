@@ -1,0 +1,17 @@
+{
+    "name": "Bharavi",
+    "age": 25,
+    "email": "bharavi@mymail.com",
+    "number": "+91 9381153646",
+    "skills": [
+        "Python",
+        "Pandas",
+        "JSON",
+        "Threading"
+    ],
+    "address": {
+        "city": "Guntur",
+        "pincode": 522007
+    },
+    "active": true
+}
