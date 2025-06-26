@@ -1,0 +1,20 @@
+import numpy as np
+
+a = np.array([1, 2, 3])
+b = np.array([[1, 2, 3], [4, 5, 6]])
+c = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+
+print("Array a:", a)
+print("Dimensions:", a.ndim)
+print("Shape:", a.shape)
+print("Datatype:",a.dtype)
+print("\n")
+print("Array b:", b)
+print("Dimensions:", b.ndim)
+print("Shape:", b.shape)
+print("Datatype:",b.dtype)
+print("\n")
+print("Array c:", c)
+print("Dimensions:", c.ndim)
+print("Shape:", c.shape)
+print("Datatype:",c.dtype)

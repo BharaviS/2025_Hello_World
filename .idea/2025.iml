@@ -5,6 +5,7 @@
     <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="FileHandlings" />
+    <orderEntry type="module" module-name="NumPy" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
