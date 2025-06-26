@@ -15,3 +15,12 @@ print("")
 print("Round:", np.round(np.tan(arr), 2))
 print("Floor:", np.floor(np.tan(arr)))
 print("Ceil:", np.ceil(np.tan(arr)))
+print("\n")
+print("Filtered Array:",arr[arr > 5], arr[(arr > 2) & (arr<10)])
+
+arr[arr < 0] = 0
+my_arr = arr
+marks = np.where(my_arr % 2 == 0, "Even", "Odd")
+
+print("Filtered Negative Values:", my_arr)
+print("Conditional Logic:", marks)
