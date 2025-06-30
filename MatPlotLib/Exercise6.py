@@ -18,4 +18,5 @@ plt.pie(snacks_brought,
 plt.title("🎉 Party Snack Share 🧁", fontsize=16, color="darkblue")
 plt.axis("equal")
 
+plt.legend()
 plt.show()
