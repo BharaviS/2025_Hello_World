@@ -1,0 +1,2 @@
+This will go into the file instead of console.
+Logging info to output.txt
