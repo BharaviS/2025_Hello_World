@@ -13,7 +13,27 @@ connection = mysql.connector.connect(
 )
 
 cursor = connection.cursor()
-cursor.execute("SELECT * FROM employees")
 
-for row in cursor.fetchall():
-    print(row)
+cursor.execute("SELECT * FROM employees")
+emp_one = cursor.fetchone()
+emp_meny = cursor.fetchmany(2)
+# emp_set = cursor.fetchsets()
+employees = cursor.fetchall()
+
+cursor.execute("SELECT * FROM departments")
+departments = cursor.fetchall()
+
+for e_row in employees:
+    print(e_row)
+
+print("\n")
+
+for d_row in departments:
+    print(d_row)
+
+print("\n")
+
+print(emp_one ,"\n")
+print(emp_meny, "\n")
+
+print("\n")
