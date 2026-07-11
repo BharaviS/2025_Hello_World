@@ -3,5 +3,7 @@ python-dotenv==1.2.2
 mysql==0.0.3
 mysql-connector-python==9.7.0
 fastapi==0.139.0
-uvicorn[standard]==0.50.0
+uvicorn[standard]==0.51.0
 pydantic==2.13.4
+pydantic-core==2.47.0
+sqlalchemy==2.0.51
