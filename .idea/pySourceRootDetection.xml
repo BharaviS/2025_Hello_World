@@ -3,10 +3,12 @@
   <component name="PySourceRootDetectionService">
     <option name="sourcePathsSet">
       <set>
-        <option value="$PROJECT_DIR$/FastAPI/Example3/app" />
         <option value="$PROJECT_DIR$/FastAPI/Example3" />
+        <option value="$PROJECT_DIR$/FastAPI/Example4" />
+        <option value="$PROJECT_DIR$/FastAPI/Example3/app" />
         <option value="$PROJECT_DIR$/FastAPI/Example1" />
         <option value="$PROJECT_DIR$/FastAPI/Example2" />
+        <option value="$PROJECT_DIR$/FastAPI/Example4/app" />
       </set>
     </option>
   </component>
