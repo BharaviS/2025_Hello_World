@@ -4,6 +4,7 @@ from uvicorn import run
 from app import create_app
 from app.database import init_db
 
+# TODO: creating DataBase
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
     await init_db()
